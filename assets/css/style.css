@@ -14,6 +14,11 @@ body {
   margin-top: 0% !important;
 }
 
+.tittle {
+  font-size: 1em;
+  text-align: center;
+  padding: 0;
+}
 /* Mis trabajos */
 
 #Mis-trabajos .image-top {
@@ -35,25 +40,25 @@ body {
     font-weight: 400;
   }
 
-  .navbar-brand{
+  .navbar-brand {
     width: 100px;
   }
 }
 
-.card{
+.card {
   display: flow-root;
   float: left;
   block-size: 35rem;
   margin-bottom: 3rem;
 }
 
-.card img{
+.card img {
   padding: 3%;
   width: 18rem;
   height: 16rem;
 }
 
-.card a{
+.card a {
   display: flex;
   justify-content: center;
 }
