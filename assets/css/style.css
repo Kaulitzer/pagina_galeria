@@ -2,6 +2,13 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 /* Hero Section */
 
 #Hero-Section {
@@ -14,6 +21,12 @@ body {
   margin-top: 0% !important;
 }
 
+#portfolio-description {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
 .tittle {
   font-size: 1em;
   text-align: center;
@@ -21,35 +34,27 @@ body {
 }
 /* Mis trabajos */
 
-#Mis-trabajos .image-top {
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+#conocimientos {
+  background-color: #1F4690;
+  color: #CCCCCC;
 }
 
-/* Contacto */
-
-#Contacto form label {
-  font-weight: 700;
-  color: #373a3c;
-}
-
-@media (max-width: 768px) {
-  #Contacto form label {
-    font-weight: 400;
-  }
-
-  .navbar-brand {
-    width: 100px;
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 40%;  /* Cambiar de 33.33333333% a 40% */
   }
 }
 
+i{
+  font-size: 80px;
+}
 .card {
   display: flow-root;
   float: left;
   block-size: 35rem;
   margin-bottom: 3rem;
+  position: relative;
 }
 
 .card img {
@@ -58,7 +63,54 @@ body {
   height: 16rem;
 }
 
-.card a {
+.card .btn-group {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card .btn-group .btn {
+  margin: 0 5px;
+}
+
+/* Contacto */
+
+.contact-links {
+  padding: 10px 0;
+}
+
+.contact-links .col {
+  margin-bottom: 0;
+}
+
+.contact-links a {
+  margin: 0 10px;
+  color: #000;
+  font-size: 25px;
+}
+
+.contact-links a:hover {
+  color: #007bff;
+}
+section {
+  margin: 0 !important;
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+footer {
+  font-size: 25px;
+  text-align: center;
+  color: whitesmoke;
 }
